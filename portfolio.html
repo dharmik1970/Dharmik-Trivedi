@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="script" href="script.js">
+
+    <style>
+        /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+    
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 254, 254);
+    padding: 2rem;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    background: linear-gradient(to right, #8b0087, #4b0082);
+
+}
+
+.profile {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+    
+}
+
+
+
+nav ul {
+    display: flex;
+    text-align: right;   
+    padding: 10px;
+}
+
+nav ul li {
+    margin-left: 2rem;
+    float: left;
+    list-style-type: none;
+}
+
+nav ul li a {
+    margin-left: 10px; /* Optional: Adds space between the buttons */
+            padding: 10px 20px;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+}
+
+
+
+/* Home Icon */
+#home-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    background: linear-gradient(to right, #8b0087, #4b0082);
+
+
+}
+
+/* Projects Section */
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    width: 300px;
+    border: 2px solid #000000;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 150px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Recommendations Section */
+.recommendations-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommendation-form {
+    width: 40%;
+}
+
+.recommendation-form input,
+.recommendation-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #ffffff;
+}
+
+.recommendation-form button {
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    background-color: black;
+}
+
+.recommendations-list {
+    width: 50%;
+}
+
+.recommendation {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <h1>Trivedi Dharmik</h1>
+            <p>dharmikt2005@gmail.com</p>
+            <p>91 234 532</p>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm an aspiring software engineer passionate about technology and problem-solving. I enjoy learning new skills and working on innovative projects that make a difference. Currently, I'm focused on expanding my knowledge in AI and machine learning.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>Planto</h3>
+                <p>Planto is a online plant selling website</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span>HTML</span>
+                <p>2 years experience</p>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <p>1.5 years experience</p>
+            </div>
+            <div class="skill">
+                <span>Java</span>
+                <p>5 years experience</p>
+            </div>
+            <div class="skill">
+                <span>React</span>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill">
+                <span>Node.js</span>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <p>2 years experience</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="recommendations-container">
+            <div class="recommendation-form">
+                <h3>Add a Recommendation</h3>
+                <input type="text" id="recommender-name" placeholder="Your Name" required>
+                <textarea id="recommendation-text" placeholder="Your recommendation" required></textarea>
+                <button type="submit">Submit Recommendation</button>
+            </div>
+            <div class="recommendations-list">
+                <span class="recommender-name">Planto is a really great project for the clints who wants information about their plants <br>
+                    -Joen Lee<span>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
